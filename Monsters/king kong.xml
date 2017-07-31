@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="king kong" nameDescription="a king kong" race="blood" experience="515000" speed="210" manacost="0">
+	<health now="9000" max="9000" />
+	<look type="116" head="114" body="114" legs="114" feet="114" corpse="6043" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="10" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-950" max="-1750" />
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="speed" interval="2000" chance="15" speedchange="4000" duration="3000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		
+		<element physicalPercent="-30" />
+		<element earthPercent="10" />
+		<element energyPercent="5" />
+		<element icePercent="-15" />
+		<element deathPercent="-5" />
+	</elements>
+	<voices interval="2000" chance="7">
+		<voice sentence="Hugah!" />
+		<voice sentence="Ungh! Ungh!" />
+		<voice sentence="THIS IS MY ISLAND!" />
+		<voice sentence="I AM A KING KONG!" />
+	</voices>
+	<loot>
+		<item id="2160" countmax="3" chance="69000" /><!-- crystal coin -->
+		<item id="2676" countmax="12" chance="30000" /><!-- banana -->
+		<item id="2463" chance="950" /><!-- plate armor -->
+		<item id="2200" chance="990" /><!-- protection amulet -->
+		<item id="5883" chance="980" /><!-- ape fur -->
+		<item id="2166" chance="300" /><!-- power ring -->
+		<item id="2209" chance="230" /><!-- club ring -->
+		<item id="7618" chance="570" /><!-- health potion -->
+		<item id="12427" chance="4900" /><!-- kongra shoulderpad -->
+			<item id="26031" countmax="5" chance="9550" /><!-- supreme heal potion -->
+	<item id="7590" chance="10070" /><!-- great mana potion -->
+	<item id="7418" chance="920" /><!-- nightmare blade -->		
+	<item id="8910" chance="860" /><!-- underworld rod -->	
+	<item id="2152" countmax="4" chance="5230" /><!-- platinum coin -->
+	</loot>
+</monster>

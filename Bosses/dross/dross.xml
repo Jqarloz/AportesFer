@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <monster name="dross" nameDescription="dross" race="blood" experience="5000000" speed="5000" manacost="0">>
 	<health now="666666" max="666666" />
-	<look type="[COLOR="dark"]289" head="38" body="19" legs="21" feet="20" addons="2"  corpse="6068"/>
+	<look type="289" head="113" body="114" legs="94" feet="76" addons="2" mount="426"  corpse="6068"/>
 	<targetchange interval="60000" chance="0"/>
     <strategy attack="75" defense="40"/>
 	 <flags>
@@ -49,7 +49,7 @@
 	<summons maxSummons="5">
 		<summon name="numero uno" interval="1000" chance="12" />
 		<summon name="numero dos" interval="1000" chance="12" />
-		<summon name="nuemro tres" interval="1000" chance="12" />
+		<summon name="numero tres" interval="1000" chance="12" />
 		<summon name="numero cuatro" interval="1000" chance="12" />
 		<summon name="numero cinco" interval="1000" chance="12" />
 	</summons>
@@ -65,17 +65,77 @@
 	<voice sentence="NUMERO #5" />
 </voice>
 <loot>
-	<item id="2143" countmax="80"	chance="90000"> <!-- white pearl---->
-	<item id="2144" countmax="80"	chance="90000"> <!-- black pearl-------->
-	<item id="2145" countmax="80"	chance="90000"> <!-- small diamond-------->
-	<item id="2146" countmax="80"	chance="90000"> <!-- small saphire-------->
-	<item id="2147" countmax="80"	chance="90000"> <!--small ruby ---->
+	<item id="2148" countmax="271" chance="99020" /><!-- gold coin -->
+	<item id="2160" countmax="3" chance="69000" /><!-- crystal coin -->
+	<item id="2152" countmax="4" chance="5230" /><!-- platinum coin -->
+	<item id="2143" countmax="15"	chance="90000"> <!-- white pearl---->
+	<item id="2144" countmax="15"	chance="90000"> <!-- black pearl-------->
+	<item id="2145" countmax="15"	chance="90000"> <!-- small diamond-------->
+	<item id="2146" countmax="15"	chance="90000"> <!-- small saphire-------->
+	<item id="2147" countmax="15"	chance="90000"> <!--small ruby ---->
 	<item id="2157" countmax="8"	chance="90000"> <!-- gold nugget ---->
 	<item id="6500" countmax="5" chance="30000"/> <!-- demonic esscences---->	
 	<item id="21399" countmax="1" chance="30000" /><!-- golden raid token -->
 	<item id="18423" countmax="4" chance="9000" /><!-- major tokens -->
 	<item id="18422" countmax="4" chance="9000" /><!-- minor tokens -->
 	<item id="25172" countmax="4" chance="5000"/><!-- silver token -->	
-	<item id="8981" countmax="1" chance="5000"/><!-- experience card sugerencia  --> 
+	<item id="26031" countmax="5" chance="9550" /><!-- supreme heal potion -->
+	<item id="7590" chance="10070" /><!-- great mana potion -->
+	<item id="7418" chance="920" /><!-- nightmare blade -->		
+	<item id="8910" chance="860" /><!-- underworld rod -->		
+	<item id="18415" countmax="5" chance="10000" /> <!-- Green Crystal Shard -->
+	<item id="22396" countmax="14" chance="2000" /> <!-- Cluster of Solace -->
+	<item id="2158"  chance="10000" /> <!-- Blue Gem -->
+	<item id="18416" countmax="10" chance="10000" /> <!-- Green Crystal Splinter -->
+	<item id="18414" countmax="15" chance="10000" /> <!-- Violet Crystal Shard -->
+	<item id="6529" chance="6000" /> <!-- Infernal Bolt -->
+	<item id="22612" chance="6000" /> <!-- Demonic Tapestry -->
+	<item id="5914" chance="6000" /> <!-- Yellow Piece of Cloth -->
+	<item id="5911" chance="6000" /> <!-- Red Piece of Cloth -->
+	<item id="2381" chance="12000" /><!-- halberd -->
+	<item id="2478" chance="12000" /><!-- brass legs -->
+	<item id="2457" chance="11000" /><!-- steel helmet -->
+	<item id="2463" chance="11000" /><!-- plate armor -->
+	<item id="2377" chance="9300" /><!-- two handed sword -->
+	<item id="2417" chance="7000" /><!-- battle hammer -->
+	<item id="2475" chance="5000" /><!-- warrior helmet -->
+	<item id="2430" chance="2600" /><!-- knight axe -->
+	<item id="2490" chance="2500" /><!-- dark helmet -->
+	<item id="2489" chance="2000" /><!-- dark armor -->
+	<item id="2477" chance="1000" /><!-- knight legs -->
+	<item id="2133" chance="770" />	<!-- ruby necklace -->
+	<item id="2476" chance="690" />	<!-- knight armor -->
+	<item id="7895" chance="570" />	<!-- lightning legs -->
+	<item id="2195" chance="450" />	<!-- boots of haste -->
+	<item id="2414" chance="240" />	<!-- dragon lance -->
+	
+		<item id="22398" chance="800" /> <!-- Crude Umbral Blade -->
+		<item id="22401" chance="1000" /> <!-- Crude Umbral Slayer -->
+		<item id="22404" chance="1000" /> <!-- Crude Umbral Axe -->
+		<item id="22407" chance="1000" /> <!-- Crude Umbral Chopper -->
+		<item id="22413" chance="1000" /> <!-- Crude Umbral Hammer -->
+		<item id="22410" chance="500" /> <!-- Crude Umbral Mace -->
+		<item id="22416" chance="1000" /> <!-- Crude Umbral Bow -->
+		<item id="22419" chance="400" /> <!-- Crude Umbral Crossbow -->
+		<item id="22422" chance="700" /> <!-- Crude Umbral Spellbook -->
+		<item id="22399" chance="100" /> <!-- Umbral Blade -->
+		<item id="22402" chance="200" /> <!-- Umbral Slayer -->
+		<item id="22405" chance="1000" /> <!-- Umbral Axe -->
+		<item id="22408" chance="500" /> <!-- Umbral Chopper -->
+		<item id="22414" chance="1000" /> <!-- Umbral Hammer -->
+		<item id="22411" chance="500" /> <!-- Umbral Mace -->
+		<item id="22417" chance="250" /> <!-- Umbral Bow -->
+		<item id="22420" chance="400" /> <!-- Umbral Crossbow -->
+		<item id="22423" chance="200" /> <!-- Umbral Spellbook -->
+		<item id="22400" chance="300" /> <!-- Umbral Masterblade -->
+		<item id="22403" chance="700" /> <!-- Umbral Master Slayer -->
+		<item id="22406" chance="500" /> <!-- Umbral Master Axe -->
+		<item id="22409" chance="300" /> <!-- Umbral Master Chopper -->
+		<item id="22415" chance="250" /> <!-- Umbral Master Hammer -->
+		<item id="22412" chance="300" /> <!-- Umbral Master Mace -->
+		<item id="22418" chance="1300" /> <!-- Umbral Master Bow -->
+		<item id="22421" chance="1000" /> <!-- Umbral Master Crossbow -->
+		<item id="22424" chance="140" /> <!-- Umbral Master Spellbook -->
+	
 
 </monster>

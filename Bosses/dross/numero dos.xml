@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="numero dos" nameDescription="a ghost" race="undead" experience="0" speed="2500" manacost="0">
+<monster name="number two" nameDescription="a ghost" race="undead" experience="0" speed="2500" manacost="0">
 	<health now="3000" max="3000" />
 	<look type="355" corpse="12631" />
 	<targetchange interval="4000" chance="10" />
