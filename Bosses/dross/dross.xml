@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<monster name="dross" nameDescription="dross" race="blood" experience="5000000" speed="5000" manacost="0">>
+	<health now="666666" max="666666" />
+	<look type="[COLOR="dark"]289" head="38" body="19" legs="21" feet="20" addons="2"  corpse="6068"/>
+	<targetchange interval="60000" chance="0"/>
+    <strategy attack="75" defense="40"/>
+	 <flags>
+	  <flag rewardboss="1" />
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag canpushcreatures="1"/>
+      <flag targetdistance="1"/>
+      <flag staticattack="90"/>
+      <flag runonhealth="0"/>
+</flags>
+	<attacks>
+    <attack name="melee" interval="2000" min="-500" max="-1300"/>
+    <attack name="fire" interval="2000" chance="50" range="7" radius="8" target="1" min="-500" max="-1300">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="firearea"/>
+</attack>
+    <attack name="lifedrain" interval="3000" chance="25" radius="8" target="0" min="-500" max="-1300">
+		<attribute key="areaEffect" value="rednote"/>
+</attack>
+	<attack name="death" interval="2000" chance="16" length="8" spread="0" min="-500" max="-1300">
+		<attribute key="areaEffect" value="mortarea"/>
+</attack>
+    <attack name="speed" interval="3000" chance="25" target="1" speedchange="-100" duration="3000">
+		<attribute key="areaEffect" value="redshimmer"/>
+	</attack>
+</attacks>
+    <defenses armor="200" defense="165">
+      <defense name="healing" interval="1000" chance="15" min="500" max="1000">
+        <attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+</defenses>
+	<immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity invisible="1"/>
+</immunities>
+	<summons maxSummons="5">
+		<summon name="numero uno" interval="1000" chance="12" />
+		<summon name="numero dos" interval="1000" chance="12" />
+		<summon name="nuemro tres" interval="1000" chance="12" />
+		<summon name="numero cuatro" interval="1000" chance="12" />
+		<summon name="numero cinco" interval="1000" chance="12" />
+	</summons>
+	<voices interval="2000" chance="7">
+	<voice sentence="COÑOOOOOO" />
+	<voice sentence="PERTURBADOR" />
+	<voice sentence="GRAVE ERROR" />
+	<voice sentence="ESTA ES LAS 5 HISTORIAS MAS ESCALOFRIANTES...." />
+	<voice sentence="NUMERO #1" />
+	<voice sentence="NUMERO #2" />	
+	<voice sentence="NUMERO #3" />
+	<voice sentence="NUMERO #4" />	
+	<voice sentence="NUMERO #5" />
+</voice>
+<loot>
+	<item id="2143" countmax="80"	chance="90000"> <!-- white pearl---->
+	<item id="2144" countmax="80"	chance="90000"> <!-- black pearl-------->
+	<item id="2145" countmax="80"	chance="90000"> <!-- small diamond-------->
+	<item id="2146" countmax="80"	chance="90000"> <!-- small saphire-------->
+	<item id="2147" countmax="80"	chance="90000"> <!--small ruby ---->
+	<item id="2157" countmax="8"	chance="90000"> <!-- gold nugget ---->
+	<item id="6500" countmax="5" chance="30000"/> <!-- demonic esscences---->	
+	<item id="21399" countmax="1" chance="30000" /><!-- golden raid token -->
+	<item id="18423" countmax="4" chance="9000" /><!-- major tokens -->
+	<item id="18422" countmax="4" chance="9000" /><!-- minor tokens -->
+	<item id="25172" countmax="4" chance="5000"/><!-- silver token -->	
+	<item id="8981" countmax="1" chance="5000"/><!-- experience card sugerencia  --> 
+
+</monster>

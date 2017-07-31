@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="numero tres" nameDescription="a ghost" race="undead" experience="0" speed="2500" manacost="0">
+	<health now="3000" max="3000" />
+	<look type="355" corpse="12631" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="80" />
+		<flag runonhealth="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="60" attack="60" />
+		<attack name="icicle" interval="2000" chance="20" range="7" target="1" min="-50" max="-1000" />
+		<attack name="souleater drown" interval="2000" chance="10" />
+		<attack name="death" interval="2000" chance="10" length="4" spread="3" target="0" min="-100" max="-700">
+			<attribute key="areaEffect" value="rednote" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="25" radius="4" target="0" min="-100" max="-800">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30">
+		<defense name="invisible" interval="2000" chance="5" duration="3000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="healing" interval="2000" chance="15" min="300" max="500">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-30" />
+		<element icePercent="50" />
+		<element firePercent="-30" />
+		<element energyPercent="-30" />
+		<element physicalPercent="30" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+		<immunity death="1" />
+	</immunities>
+	<voices interval="2000" chance="7">
+		<voice sentence="buuuuuuu!" />
+		</voices>
+	
+</monster>
