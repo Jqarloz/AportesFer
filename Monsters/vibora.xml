@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Vivora" nameDescription="a Evil Vivora" race="blood" experience="500000" speed="4000" manacost="0">
+	<health now="150000" max="150000" />
+	<look type="28" corpse="2817" />
+	<targetchange interval="4000" chance="0" />
+	<flags>
+		<flag rewardboss="1" />
+		<flag summonable="1" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="1" />
+		<flag canpushitems="0" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="90" />
+		<flag runonhealth="0" />
+	</flags>
+<attacks>
+		<attack name="melee" interval="2000" min="-1000" max="-4000" poison="1" />
+	
+		<attack name="earth" interval="2000" chance="15" target="1" range="7" min="-1000" max="-7800">
+		<attribute key="shootEffect" value="poison" />			
+		<attribute key="areaEffect" value="poison" />
+		</attack>	
+		
+</attacks>
+<defenses armor="100" defense="120">
+		<defense name="healing" interval="2000" chance="10" min="900" max="1500">
+			<attribute key="areaEffect" value="greenshimmer" />
+		</defense>
+		<defense name="invisible" interval="4000" chance="20" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="outfit" interval="4500" chance="30" monster="Serpent Spawn" duration="4000" />
+		<defense name="outfit" interval="4425" chance="30" monster="cobra" duration="4000" />
+		<defense name="outfit" interval="4475" chance="30" monster="Sea Serpent" duration="4000" />
+</defenses>
+
+<elements>
+		<element holyPercent="-10" />
+		<element physicalPercent="30" />
+		<element energyPercent="-10" />
+		<element deathPercent ="-5" />
+		<element icePercent="40" />
+	</elements>
+<immunities>
+		<immunity earth="1" />
+		<immunity energy="1" />
+		<immunity lifedrain="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+</immunities>
+
+<summons maxSummons="6">
+		<summon name="Serpent Spawn" interval="3000" chance="12" />
+		<summon name="Snake" interval="3000" chance="12" />
+		
+</summons>
+	<voices interval="2000" chance="7">
+		<voice sentence="Zzzzzzt" />
+		<voice sentence="Zzz CARNE FRESCA" />
+		<voice sentence="Zzzz DONDE ESTA TU DIOS" />
+		<voice sentence="Zzzzz HAIL GUERREIRO DRAGON" />
+	</voices>
+	
+<loot>
+		<item id="11116" chance="1800" /><!-- serpent crest  -->
+		<item id="5944" countmax="4" chance="19250" /><!-- soul orb -->
+		<item id="2528" chance="15500" /><!-- tower shield -->	
+		<item id="7366" countmax="67" chance="8100" /><!-- viper star -->
+		<item id="7632" countmax="2" chance="28000" /><!-- giant shimmering pearl -->	
+		<item id="2154" chance="15500" /><!-- yellow gem -->		
+		<item id="2156" chance="10500" /><!-- red gem -->		
+		<item id="7440" chance="10500" /><!-- mastermind potion -->		
+		<item id="2153" chance="25500" /><!-- violet gem -->		
+		<item id="7590" chance="20500" /><!-- great mana potion -->		
+		<item id="8882" chance="5500" /><!-- earthborn titan armor -->	
+		<item id="2514" chance="5500" /><!-- mastermind shield -->	
+		<item id="2127" chance="10500" /><!-- emerald bangle -->	
+		<item id="8891" chance="5500" /><!-- paladin armor -->	
+		<item id="2515" chance="5500" /><!-- guardian shield -->		
+		<item id="2671" countmax="12" chance="70500" /><!-- ham -->
+		<item id="12650" chance="2000" /><!-- snake good trophy  -->
+		<item id="12648" chance="1000" /><!-- snake god's spectre  -->
+		<item id="16015" chance="12500" /><!-- chayenee key  -->
+		<item id="12647" chance="1800" /><!-- snake god's wistguard  -->
+		<item id="18423" countmax="4" chance="9000" /><!-- major tokens -->
+		<item id="18422" countmax="4" chance="9000" /><!-- minor tokens -->
+		<item id="23663" countmax="1" chance="9000" /><!-- feedbag -->
+		
+</loot>
+	
+</monster>
